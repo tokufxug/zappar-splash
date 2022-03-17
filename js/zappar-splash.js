@@ -19,7 +19,7 @@ function onLoadFunction()
             const system = document.querySelector("a-scene").systems["zappar-camera"];
             system.permissionGranted = granted;
             if (granted) {
-                system.camera.start(system.userFacing);
+                system.camera.start();
                 document.getElementById("confirm").style.display = 'none';
                 document.getElementById("ar-view").style.display = 'block';
                 return;
